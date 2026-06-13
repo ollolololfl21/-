@@ -1,0 +1,354 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    color:beige;
+    background-color: black;
+    caret-color: transparent;
+}
+header {
+    background-color: #bea481;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    animation-name: header-appear;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+}
+.menu p {
+    font-size: 20px;
+    font-family: cursive;
+}
+.menu {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.menu-list {
+    display:flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 0;
+    align-items: center;
+
+}
+.menu-list li {
+    font-family:cursive;
+    color:rgb(223, 194, 28);
+    background-color: rgba(194, 172, 50, 0.23);
+    text-decoration: none;
+    width: 110px;
+    height: 60px;
+    margin: 3px;
+    border-radius: 10px;
+    transition: 0.05s ease-out;
+}
+.menu-list li:hover {
+    color:rgb(185, 114, 6);
+    background-color: rgb(194, 172, 50, 0.95);
+    width: 120px;
+    height: 70px;
+    margin: 1px;
+    border-radius: 12px;
+}
+.dodaty {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: crimson;
+    font-family: sans;
+    font-size: 20px;
+    width: 200px;
+    height: 45px;
+    border-radius: 40px;
+    transition: 0.05s ease-out;
+}
+.dodaty:hover {
+    background-color: rgb(201, 16, 47);
+    font-size: 21px;
+    width: 210px;
+    height: 48px;
+    border-radius: 43px;
+}
+.ingredients {
+    width: 380px;
+    text-align: center;
+}
+ul {
+    display:flex;
+    flex-direction: row;
+    list-style: none;
+    align-items: center;
+}
+label {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width:100%;
+    height:100%;
+}
+main li p {
+    margin: 4px;
+}
+h4 {
+    margin: 12px;
+    color:rgb(223, 194, 28);
+}
+main li {
+    display: flex;
+    flex-direction: column;
+}
+.pizza li {
+    background-color: #323534;
+    height: 280px;
+    width: 420px;
+    border-radius: 25px;
+    margin: 8px;
+    transition: 0.04s ease-out;
+}
+.pizza li:hover {
+    background-color: #3c3f3e;
+    height: 300px;
+    width: 450px;
+    border-radius: 28px;
+    margin: 4px;
+}
+.burgers li {
+    background-color: #323534;
+    height: 280px;
+    width: 420px;
+    border-radius: 25px;
+    margin: 8px;
+    transition: 0.04s ease-out;
+}
+.burgers li:hover {
+    background-color: #3c3f3e;
+    height: 300px;
+    width: 450px;
+    border-radius: 28px;
+    margin: 4px;
+}
+.sushi li {
+    background-color: #323534;
+    height: 280px;
+    width: 420px;
+    border-radius: 25px;
+    margin: 8px;
+    transition: 0.04s ease-out;
+}
+.sushi li:hover {
+    background-color: #3c3f3e;
+    height: 300px;
+    width: 450px;
+    border-radius: 28px;
+    margin: 4px;
+}
+.drinks li {
+    background-color: #323534;
+    height: 280px;
+    width: 420px;
+    border-radius: 25px;
+    margin: 8px;
+    transition: 0.04s ease-out;
+}
+.drinks li:hover {
+    background-color: #3c3f3e;
+    height: 300px;
+    width: 450px;
+    border-radius: 28px;
+    margin: 4px;
+}
+main li:hover {
+    background-color: rgb(90, 80, 20);
+    h4 {
+        color:rgb(214, 133, 12);
+    }
+}
+h2 {
+    align-self: center;
+}
+div {
+    display:flex;
+    flex-direction: column;
+}
+#pizza:checked ~ .pizza{
+    display: flex;
+}
+#pizza:checked ~ .menu .pizza-folder {
+    color:rgb(226, 172, 28);
+    background-color: rgba(194, 172, 50, 0.3);
+    text-decoration: underline;
+    width: 120px;
+    height: 70px;
+    margin: 1px;
+    border-radius: 12px;
+}
+#pizza:checked ~ .menu .pizza-folder:hover {
+    color:rgb(185, 114, 6);
+    background-color: rgb(194, 172, 50);
+}
+.pizza {
+    display:none;
+}
+#sushi:checked ~ .sushi{
+    display: flex;
+}
+#sushi:checked ~ .menu .sushi-folder {
+    color:rgb(226, 172, 28);
+    background-color: rgba(194, 172, 50, 0.3);
+    text-decoration: underline;
+    width: 120px;
+    height: 70px;
+    margin: 1px;
+    border-radius: 12px;
+}
+#sushi:checked ~ .menu .sushi-folder:hover {
+    color:rgb(185, 114, 6);
+    background-color: rgb(194, 172, 50);
+}
+.sushi {
+    display: none;
+}
+#burgers:checked ~ .burgers{
+    display: flex;
+}
+#burgers:checked ~ .menu .burgers-folder {
+    color:rgb(226, 172, 28);
+    background-color: rgba(194, 172, 50, 0.3);
+    text-decoration: underline;
+    width: 120px;
+    height: 70px;
+    margin: 1px;
+    border-radius: 12px;
+}
+#burgers:checked ~ .menu .burgers-folder:hover {
+    color:rgb(185, 114, 6);
+    background-color: rgb(194, 172, 50);
+}
+.burgers {
+    display: none;
+}
+#drinks:checked ~ .drinks{
+    display: flex;
+}
+#drinks:checked ~ .menu .drinks-folder {
+    color:rgb(226, 172, 28);
+    background-color: rgba(194, 172, 50, 0.3);
+    text-decoration: underline;
+    width: 120px;
+    height: 70px;
+    margin: 1px;
+    border-radius: 12px;
+}
+#drinks:checked ~ .menu .drinks-folder:hover {
+    color:rgb(185, 114, 6);
+    background-color: rgb(194, 172, 50);
+}
+.drinks {
+    display: none;
+}
+.modal-logic {
+    display: none;
+}
+h3 {
+    align-self: center;
+}
+.modal-overlay {
+    display: none;
+    position: fixed;
+    top: 20%;
+    left: 25%;
+    width: 50%;
+    height: 50%;
+    border-radius: 65px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(24,24,24);
+}
+.modal-window {
+    align-items: center;
+    font-size: 18px;
+    p {
+        margin:6px;
+    }
+    .add {
+        background-color: green;
+        padding:14px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .deny {
+        background-color: red;
+        padding:14px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+.modal-logic:checked + .modal-overlay {
+    display: flex;
+}
+.close-btn {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 20px;
+    right: 30px;
+    font-size: 35px;
+    cursor: pointer;
+}
+.butons-family {
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    height: 150px;
+    width: 100px;
+    position: fixed;
+    right: 20px;
+    top: 80px;
+    align-items: center;
+    justify-content: space-around;
+}
+.buton-container {
+    height: 50px;
+    width: 50px;
+    align-items: center;
+    justify-content: center;
+}
+.buton {
+    background-color: #595c5c;
+    height: 44px;
+    width: 44px;
+    border-radius: 10px;
+    transition: 0.2s ease-out;
+}
+.buton:hover {
+    background-color: #5d6161;
+    height: 48px;
+    width: 48px;
+    border-radius: 11px;
+    .buton-href {
+    font-size: 22px;
+    }
+}
+.buton-href {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    font-size: 20px;
+    color: #f3f9fa;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+}
+footer {
+    display: flex;
+    flex-direction: row;
+}
+@keyframes header-appear {
+    0%
+}

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ua" id="top">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moe Cafe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Moya Pizza🐢</h1>
+    </header>
+    <main>
+    <nav>
+        <div class="butons-family">
+            <div class="buton-container"><div class="buton">
+                <a href="#top" class="buton-href">↑</a>
+            </div></div>
+            <div class="buton-container"><div class="buton">
+                <a href="#pizzahref" class="buton-href">🍕</a>
+            </div></div>
+            <div class="buton-container"><div class="buton">
+                <a href="#sushihref" class="buton-href">🍣</a>
+            </div></div>
+            <div class="buton-container"><div class="buton">
+                <a href="#burgershref" class="buton-href">🍔</a>
+            </div></div>
+            <div class="buton-container"><div class="buton">
+                <a href="#drinkshref" class="buton-href">🍹</a>
+            </div></div>
+            <div class="buton-container"><div class="buton">
+                <a href="#bottom" class="buton-href">↓</a>
+            </div></div>
+        </div>
+    </nav>
+    <input type="checkbox" id="pizza" style="display: none">
+    <input type="checkbox" id="sushi" style="display: none">
+    <input type="checkbox" id="burgers" style="display: none">
+    <input type="checkbox" id="drinks" style="display: none">
+    <div class="menu">
+    <p>Наші страви</p>
+        <ul class="menu-list">
+            <li class="pizza-folder"><label for="pizza" class="btn-open">Піцца</label></li>
+            <li class="sushi-folder"><label for="sushi" class="btn-open">Суші</label></li>
+            <li class="burgers-folder"><label for="burgers" class="btn-open">Бургери</label></li>
+            <li class="drinks-folder"><label for="drinks" class="btn-open">Напої</label></li>
+        </ul>
+    </div>
+    <hr>
+    <div class="pizza" id="pizzahref">
+            <h3>Піцца</h3>
+            <ul>
+                <li>
+                    <label for="syrna_pitsa" class="btn-open">
+                    <img src="images/">
+                    <h4>Сирна</h4>
+                    <p>128.00</p>
+                    <p>Інгредієнти: томатний соус, сир, сир, сир, сир</p>
+                    <p class="dodaty">Додати</p>
+                    </label>
+                </li>
+                <li>
+                    <label for="miasna_pitsa" class="btn-open">
+                    <img src="images/">
+                    <h4>М'ясна</h4>
+                    <p>139.00</p>
+                    <p class="ingredients">Інгредієнти: томатний соус, сир, м'ясо, ковбаса фінська, ковбаса м'ясна, ковбаса смачна</p>
+                    <p class="dodaty">Додати</p>
+                    </label>
+                </li>
+            </ul>
+    </div>
+    <div class="sushi" id="sushihref">
+            <h3>Суші</h3>
+            <ul>   
+                <li>
+                    <label for="defolt-set" class="btn-open">
+                    <img src="images/">
+                    <h4>Дефолт сет</h4>
+                    <p class="ingredients">ну просто сет і всьо. біше нич. ну хз соєвий соус, імбир, васабі є, суші є шо ще нада</p>
+                    <p>198.00</p>
+                    <p class="dodaty">Додати</p>
+                    </label>
+                </li>
+            </ul>
+    </div>
+    <div class="burgers" id="burgershref">
+            <h3>Бургери</h3>
+            <ul>
+                <li>
+                    <label for="s-bec-pava" class="btn-open">
+                    <img src="images/">
+                    <h4>Чізбургер з беконом із пава</h4>
+                    <p>198.00</p>
+                    <p class="ingredients">Інгредієнти: сир, бекон пава</p>
+                    <p class="dodaty">Додати</p>
+                    </label>
+                </li>
+            </ul>
+    </div>
+    <div class="drinks" id="drinkshref">
+            <h3>Напої</h3>
+            <ul>
+                <li>
+                    <label for="chay" class="btn-open">
+                    <img src="images/">
+                    <h4>Чай</h4>
+                    <p>55.00</p>
+                    <p class="ingredients">Чорний, зелений, банан-полуниця</p>
+                    <p class="dodaty">Додати</p>
+                    </label>
+                </li>
+            </ul>
+    </div>
+    <input type="checkbox" id="syrna_pitsa" class="modal-logic">
+    <div class="modal-overlay">
+        <div class="modal-window">
+            <label for="syrna_pitsa" class ="close-btn">&times;</label>
+            <img src="images/">
+            <h4>Сирна</h4>
+            <p>128.00</p>
+            <p>Інгредієнти: томатний соус, сир, сир, сир, сир</p>
+            <p class="add">Додати до замовлення</p>
+            <p class="deny">Відмінити</p>
+        </div>
+    </div>
+    <input type="checkbox" id="miasna_pitsa" class="modal-logic">
+    <div class="modal-overlay">
+        <div class="modal-window">
+            <label for="miasna_pitsa" class ="close-btn">&times;</label>
+            <img src="images/">
+            <h4>М'ясна</h4>
+            <p>139.00</p>
+            <p>Інгредієнти: томатний соус, сир, м'ясо, ковбаса фінська, ковбаса м'ясна, ковбаса смачна</p>
+            <p class="add">Додати до замовлення</p>
+            <p class="deny">Відмінити</p>
+        </div>
+    </div>
+    <input type="checkbox" id="defolt-set" class="modal-logic">
+    <div class="modal-overlay">
+        <div class="modal-window">
+            <label for="defolt-set" class ="close-btn">&times;</label>
+            <img src="images/">
+            <h4>Дефолт сет</h4>
+            <p>ну просто сет і всьо. біше нич. ну хз соєвий соус, імбир, васабі є, суші є шо ще нада</p>
+            <p>198.00</p>
+            <p class="add">Додати до замовлення</p>
+            <p class="deny">Відмінити</p>
+        </div>
+    </div>
+    <input type="checkbox" id="s-bec-pava" class="modal-logic">
+    <div class="modal-overlay">
+        <div class="modal-window">
+            <label for="s-bec-pva" class ="close-btn">&times;</label>
+            <img src="images/">
+            <h4>Чізбургер з беконом із пава</h4>
+            <p>198.00</p>
+            <p>Інгредієнти: сир, бекон із пава</p>
+            <p class="add">Додати до замовлення</p>
+            <p class="deny">Відмінити</p>
+        </div>
+    </div>
+    <input type="checkbox" id="chay" class="modal-logic">
+    <div class="modal-overlay">
+        <div class="modal-window">
+            <label for="chay" class ="close-btn">&times;</label>
+            <img src="images/">
+            <h4>Чай</h4>
+            <p>55.00</p>
+            <p>Чорний, зелений, банан-полуниця</p>
+            <p class="add">Додати до замовлення</p>
+            <p class="deny">Відмінити</p>
+        </div>
+    </div>
+    </main>
+    <footer>
+        <p>Контактні дані</p>
+        <p>Авторські права</p>
+        <p>і тд і тп</p>
+    </footer>
+</body>
+</html>
+<bottom-tag id="bottom"></bottom-tag>
